@@ -10,7 +10,7 @@
     "dev": "npm run clean && npm run build-dll && cross-env-shell ENV=dev NODE_OPTIONS=--max_old_space_size=4096 webpack --progress --colors --display-error-details",
     "test": "yarn install && npm run clean && npm run build-dll && cross-env-shell ENV=test NODE_OPTIONS=--max_old_space_size=4096 webpack --progress --colors --display-error-details",
     "stage": "yarn install && npm run clean && npm run build-dll && cross-env-shell ENV=stage NODE_OPTIONS=--max_old_space_size=4096 webpack --progress --colors --display-error-details",
-    "product": "yarn install && npm run clean && npm run build-dll && cross-env-shell ENV=product NODE_OPTIONS=--max_old_space_size=4096 webpack --progress --colors --display-error-details",
+    "product": "yarn install && npm run clean && npm run build-dll && cross-env-shell ENV=product NODE_OPTIONS=--max_old_space_size=4096 webpack --progress --colors --display-error-details"
   },
   "repository": {
     "type": "git",

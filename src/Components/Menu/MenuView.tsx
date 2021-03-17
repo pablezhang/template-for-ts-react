@@ -15,7 +15,7 @@ import { Menu } from 'antd';
 import { withRouter, RouteComponentProps } from 'react-router-dom';
 
 @(withRouter as any) // What is that? See this link: https://github.com/DefinitelyTyped/DefinitelyTyped/issues/17181
-class MenuView extends Component<UIBaseProps & RouteComponentProps, any> {
+class MenuView extends Component<UIBaseProps & Partial<RouteComponentProps>, any> {
   render() {
     const { style, className, prefix = 'Menu' } = this.props;
     const wrapCls = classNames(prefix, className);

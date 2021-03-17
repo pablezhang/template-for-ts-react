@@ -16,8 +16,7 @@ import Menu from 'Components/Menu';
 
 const { Header, Footer, Content } = Layout;
 
-// @ts-ignore
-@withRouter
+@(withRouter as any)
 class LayoutView extends Component<UIBaseProps> {
   // componentWillMount() {
   //   if (isEmpty(Cookie.get(config.cookie.auth_name))) {
@@ -45,4 +44,4 @@ class LayoutView extends Component<UIBaseProps> {
 }
 
 // 使用热更新插件，代码改动时更新视图
-export default hot(module)(LayoutView);
+export default LayoutView;
