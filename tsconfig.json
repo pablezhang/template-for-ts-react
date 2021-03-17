@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "plugins": [
+      { "transform": "transformer-module" }
+    ],
+    "moduleResolution": "node",
+//    "sourceMap": true,
+    // "checkJs": true,
+    "module": "esnext",
+    "target": "esnext",   /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNEXT'. */
+    "lib": ["esnext", "dom"],
+    "outDir": "./src",
+    "rootDir": "./src",
+    "importHelpers":false,
+    // "allowJs": true, // 是否编译js文件
+    "declarationDir": "./lib",
+    "declaration": true,
+    "reactNamespace": "react",
+    "jsx": "preserve", //允许JSX
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true, //禁止对同一个文件的不一致引用
+    "allowUnusedLabels": true, //未引用的代码报错
+    "paths": {
+      "widget/*": ["src/widget/*"],
+      "config/*": ["src/config/*"],
+      "Services/*": ["src/Services/*"],
+      "Components/*": ["src/Components/*"],
+      "lib/*":  ["lib/*"],
+      "utils/*": ["src/utils/*"],
+//      "mobx": ["node_modules/mobx/lib/mobx"],
+      "mobx-react": ["node_modules/mobx-react/index.d.ts"],
+      "classnames": ["node_modules/classnames/index.js"],
+      "csstype": ["node_modules/csstype/index.d.ts"] // @types/react 中找不到该文件
+    },
+    "experimentalDecorators": true,  // 允许使用ES7的装饰器
+    "emitDecoratorMetadata": false, // 允许使用ES7的装饰器
+    "watch": true,
+//    "noEmitHelpers": true, // 不在输出文件中输出__extends __decorate等的声明代码
+    "noFallthroughCasesInSwitch": true //对 switch 语句中贯穿的 case 报错.
+  },
+  "skipDefaultLibCheck":true,
+  "exclude": [
+    "node_modules",
+  ],
+  "include": [
+    "./src/**/*"
+  ],
+}
