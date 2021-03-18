@@ -1,0 +1,81 @@
+@startuml
+interface IBaseMgrStore {
+    -parentId: string
+    -isEdit: boolean
+    -hadChanged: boolean
+    +add(newItem): void
+    +delete(selectedKey): void;
+    +update(updateItem): void
+    +onLoad({pageSize, pageNum, parentId}): void
+
+    +getNavStore(): INavStore
+    +getNavChildStore(): INavStore
+}
+
+
+interface ISearch{
+    -searchMap: object
+    onSearch: (searchMap): void
+}
+
+
+class AsyncSearch
+
+class Search
+
+interface IPageStore{
+    +pageSize: number
+    +pagweNum: number
+    +total: number
+    +onPageChange: (pageSize, pageNum) => IBaseMgrStore.onLoad({pageSize, pageNum})
+}
+
+class PageStore
+
+interface IService{
+    +add()
+    +delete()
+    +update()
+    +query()
+}
+
+ISearch <|.. Search
+
+interface IClientStore{
+    hadChanged: boolean
+    getNavStore(): INavStore
+
+}
+
+IClientStore*..INavStore
+
+INavStore--|>IBaseMgrStore
+TreeNavStore .up.|> INavStore
+TableNavStore .up.|> INavStore
+TreeGridStore .up.|> INavStore
+PageStore--|> IPageStore
+IBaseMgrStore *-- IService
+IBaseMgrStore *--ISearch
+IBaseMgrStore *--IPageStore
+
+interface INavStore{
+    -parentId: string;
+    -dataSource: any[] | object;
+
+    +dataSourceInSearch: any[] | object;
+    +selectedKey: string
+    +selectedItem: any
+    +onSelect: (selectedKey: string, selectedItem?: any): void
+}
+
+class BaseMgrStore{
+    parentId: string
+
+    add()
+    delete()
+    query()
+    update()
+
+}
+
+@enduml
