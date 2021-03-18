@@ -28,7 +28,7 @@
 //   AuthMgr: 'iconquanxianguanli'
 // }
 
-import { UIBaseProps } from 'Components/UIBaseComponents';
+import { UIBaseProps } from '../../components/UIBaseComponents';
 import React, { Component } from 'react';
 import './PlaceholderStyle.less';
 import classNames from 'classnames';

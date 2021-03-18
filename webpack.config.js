@@ -19,7 +19,7 @@ module.exports = {
       publicPath: config['' + process.env.ENV].publicPath
     }),
     new MiniCssExtractPlugin({
-      filename: 'css/[name].[hash].css'
+      filename: 'style/[name].[hash].style'
     }),
     new webpack.DllReferencePlugin({
       context: __dirname,
@@ -58,9 +58,9 @@ module.exports = {
       {
         test: /\.less$/,
         use: [
-          // 'css-hot-loader',
+          // 'style-hot-loader',
           MiniCssExtractPlugin.loader,
-          'css-loader',
+          'style-loader',
           // 'postcss-loader',
           'less-loader'
         ]
@@ -68,7 +68,7 @@ module.exports = {
 
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader']
+        use: [MiniCssExtractPlugin.loader, 'style-loader']
       },
 
       // 图片处理
@@ -109,7 +109,7 @@ module.exports = {
     alias: {
       'react-dom': '@hot-loader/react-dom',
       pages: path.join(__dirname, 'src/pages'),
-      Components: path.join(__dirname, 'src/Components'),
+      Components: path.join(__dirname, 'src/components'),
       widget: path.join(__dirname, 'src/widget'),
       router: path.join(__dirname, 'src/router'),
       utils: path.join(__dirname, 'src/utils'),

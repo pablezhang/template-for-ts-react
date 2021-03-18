@@ -9,7 +9,7 @@ import React, { Component } from 'react';
 import { HashRouter as Router, Route, Switch, withRouter } from 'react-router-dom';
 
 // 主页面布局
-import Layout from 'Components/Layout';
+import Layout from '../components/Layout';
 import { LocaleProvider } from 'antd';
 import zhCN from 'antd/es/locale-provider/zh_CN';
 // import { hot } from 'react-hot-loader';

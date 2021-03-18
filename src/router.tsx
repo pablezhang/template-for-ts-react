@@ -2,7 +2,7 @@
 
 import * as React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Layout from './Components/Layout';
+import Layout from './components/Layout';
 
 import { map } from 'lodash';
 import loadable from '@loadable/component';
@@ -23,19 +23,19 @@ export const routeList: RouteDto[] = [
     exact: true,
     visible: false,
     name: '首页',
-    pagePath: './page/Home/index'
+    pagePath: './pages/Home/index'
   },
   {
     key: 2,
     path: '/home',
     name: '首页',
-    pagePath: './page/Home/index'
+    pagePath: './pages/Home/index'
   },
   {
     key: 3,
     path: '/about',
     name: '关于',
-    pagePath: './page/About/index'
+    pagePath: './pages/About/index'
   }
 ];
 export const routes = map(routeList, route => {

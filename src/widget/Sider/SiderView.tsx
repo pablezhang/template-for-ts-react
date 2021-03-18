@@ -5,7 +5,7 @@
  * @Date:2019/9/19 10:15
  */
 
-import { UIBaseProps } from 'Components/UIBaseComponents';
+import { UIBaseProps } from '../../components/UIBaseComponents';
 import React, { Component } from 'react';
 import './SiderStyle.less';
 import classNames from 'classnames';

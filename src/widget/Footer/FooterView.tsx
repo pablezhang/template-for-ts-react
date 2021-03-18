@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 
 import classNames from 'classnames';
 import './FooterStyle.less';
-import { UIBaseProps } from 'Components/UIBaseComponents';
+import { UIBaseProps } from '../../components/UIBaseComponents';
 
 export default class FooterView extends Component<UIBaseProps> {
   render() {

@@ -11,8 +11,8 @@ import { hot } from 'react-hot-loader';
 import SiderView from 'widget/Sider/SiderView';
 import FooterBar from 'widget/Footer/FooterView';
 import HeaderBar from 'widget/Header/HeaderView';
-import { UIBaseProps } from 'Components/UIBaseComponents';
-import Menu from 'Components/Menu';
+import { UIBaseProps } from '../UIBaseComponents';
+import Menu from '../Menu';
 
 const { Header, Footer, Content } = Layout;
 

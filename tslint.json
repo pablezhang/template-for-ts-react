@@ -11,7 +11,7 @@
     // // @prettier 可交由 prettier 控制
     // "indent": [true, "spaces", 2]
     // 指定无隐式依赖，第一个数组为跳过检查的白名单。如不设置白名单，与tsconfig.json中的paths alias冲突
-    "no-implicit-dependencies": [true, ["widget", "Components", "utils", "Services", "app", "src", "config"]],
+    "no-implicit-dependencies": [true, ["widget", "Components", "utils", "services", "app", "src", "config"]],
     // https://palantir.github.io/tslint/rules/no-unused-expression/
     "no-unused-expression": [true, "allow-fast-null-checks"],
     "no-redundant-jsdoc": false

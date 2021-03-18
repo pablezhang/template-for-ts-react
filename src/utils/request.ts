@@ -100,4 +100,4 @@ axios.interceptors.response.use(
   }
 );
 
-export default axios;
+export default axios as any; // todo remove any

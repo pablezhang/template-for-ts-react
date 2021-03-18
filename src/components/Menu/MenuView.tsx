@@ -5,7 +5,7 @@
  * @Date:2019/9/19 10:15
  */
 
-import { UIBaseProps } from 'Components/UIBaseComponents';
+import { UIBaseProps } from '../UIBaseComponents';
 import React, { Component, ReactElement } from 'react';
 import './MenuStyle.less';
 import classNames from 'classnames';

@@ -24,8 +24,8 @@
     "paths": {
       "widget/*": ["src/widget/*"],
       "config/*": ["src/config/*"],
-      "Services/*": ["src/Services/*"],
-      "Components/*": ["src/Components/*"],
+      "services/*": ["src/services/*"],
+      "components*": ["src/components*"],
       "lib/*":  ["lib/*"],
       "utils/*": ["src/utils/*"],
 //      "mobx": ["node_modules/mobx/lib/mobx"],
