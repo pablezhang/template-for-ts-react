@@ -19,7 +19,7 @@ module.exports = {
       publicPath: config['' + process.env.ENV].publicPath
     }),
     new MiniCssExtractPlugin({
-      filename: 'style/[name].[hash].style'
+      filename: 'style/[name].[hash].css'
     }),
     new webpack.DllReferencePlugin({
       context: __dirname,
@@ -60,7 +60,7 @@ module.exports = {
         use: [
           // 'style-hot-loader',
           MiniCssExtractPlugin.loader,
-          'style-loader',
+          'css-loader',
           // 'postcss-loader',
           'less-loader'
         ]
@@ -68,7 +68,7 @@ module.exports = {
 
       {
         test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'style-loader']
+        use: [MiniCssExtractPlugin.loader, 'css-loader']
       },
 
       // 图片处理
