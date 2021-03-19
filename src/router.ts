@@ -1,9 +1,5 @@
 /** @format */
 
-import * as React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Layout from './components/Layout';
-
 import { map } from 'lodash';
 import loadable from '@loadable/component';
 
