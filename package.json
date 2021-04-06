@@ -1,6 +1,6 @@
 {
   "name": "template-for-ts-react",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -53,6 +53,7 @@
     "@types/react-dom": "^16.9.2",
     "@types/react-hot-loader": "^4.1.0",
     "@types/react-router-dom": "^5.1.0",
+    "auto-swagger": "^1.0.7",
     "autoprefixer": "^9.6.5",
     "axios": "^0.18.0",
     "babel-loader": "^8.0.6",
